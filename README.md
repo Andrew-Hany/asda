@@ -26,9 +26,9 @@
   ### test5
   
   
-    
+  <div>  
   <img src="/terminal pics/5.png"
-
+       </div>
  
  ### test6 
    <div >
