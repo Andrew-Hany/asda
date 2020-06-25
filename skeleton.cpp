@@ -8,15 +8,9 @@
 	(2) https://github.com/michaeljclark/riscv-meta/blob/master/meta/opcodes
 */
 
-/*
 
-what i dont know 
-1)how should we use  the address 
-2)what are the usage of these  S_imm, B_imm, U_imm, J_imm
-3)labels 
-what i am not sure if i am right or not 
-1)  asigning values to these S_imm, B_imm, U_imm, J_imm 
-*/
+
+
 
 #include <iostream>
 #include <fstream>
