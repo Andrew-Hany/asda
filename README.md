@@ -9,30 +9,31 @@
   ### test2
  <div >
   <img src="/terminal pics/2.png"
-<\div>
+</div>
   
  ### test3
    <div >
   <img src="/terminal pics/3.png"
-<\div>
+</div>
   
  ### test4
  
 
    <div >
   <img src="/terminal pics/4.png"
-<\div>
+</div>
   
   ### test5
-    <div >
-  <img src="/terminal pics/5.png"
-<\div>
   
+  
+    
+  <img src="/terminal pics/5.png"
+
  
  ### test6 
    <div >
   <img src="/terminal pics/6.png"
-<\div>
+</div>
   
 
  
