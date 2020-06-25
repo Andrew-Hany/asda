@@ -1,0 +1,44 @@
+
+a.out:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <fib-0x28>:
+   0:	40000113          	li	sp,1024
+   4:	00311113          	slli	sp,sp,0x3
+   8:	00500893          	li	a7,5
+   c:	00000073          	ecall
+  10:	018000ef          	jal	ra,28 <fib>. Pc+offset (20)😂😂😂😂😂
+  14:	00088513          	mv	a0,a7
+  18:	00100893          	li	a7,1
+  1c:	00000073          	ecall
+  20:	00a00893          	li	a7,10
+  24:	00000073          	ecall
+
+00000028 <fib>:
+  28:	00200293          	li	t0,2
+  2c:	00557663          	bleu	t0,a0,38 <recurse>
+  30:	00050893          	mv	a7,a0
+  34:	00008067          	ret
+
+00000038 <recurse>:
+  38:	ff410113          	addi	sp,sp,-12
+  3c:	00a12023          	sw	a0,0(sp)
+  40:	00812223          	sw	s0,4(sp)
+  44:	00112423          	sw	ra,8(sp)
+  48:	fff50513          	addi	a0,a0,-1
+  4c:	fddff0ef          	jal	ra,28 <fib>😂😂😂😂😂😂
+  50:	00088413          	mv	s0,a7
+  54:	00012503          	lw	a0,0(sp)
+  58:	ffe50513          	addi	a0,a0,-2
+  5c:	fcdff0ef          	jal	ra,28 <fib>😂😂😂😂😂😂😂
+  60:	011408b3          	add	a7,s0,a7
+  64:	00812083          	lw	ra,8(sp)
+  68:	00412403          	lw	s0,4(sp)
+  6c:	00012503          	lw	a0,0(sp)
+  70:	00c10113          	addi	sp,sp,12
+  74:	00008067          	ret
+
+
+

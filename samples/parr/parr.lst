@@ -1,0 +1,38 @@
+
+a.out:     file format elf32-littleriscv
+
+
+Disassembly of section .text:/Users/aucuser/Desktop/project/samples/parr/parr.lst
+
+00000000 <main>:
+   0:	40000693          	li	a3,1024
+   4:	00000293          	li	t0,0
+   8:	00400313          	li	t1,4
+
+0000000c <while_input>:
+   c:	0262d063          	ble	t1,t0,2c <end_input>
+  10:	00500893          	li	a7,5
+  14:	00000073          	ecall
+  18:	00229393          	slli	t2,t0,0x2
+  1c:	00d383b3          	add	t2,t2,a3
+  20:	00a3a023          	sw	a0,0(t2)
+  24:	00128293          	addi	t0,t0,1
+  28:	fe5ff06f          	j	c <while_input>
+
+0000002c <end_input>:
+  2c:	00000293          	li	t0,0
+  30:	00300313          	li	t1,3
+
+00000034 <while_output>:
+  34:	02534063          	blt	t1,t0,54 <done>
+  38:	00231393          	slli	t2,t1,0x2
+  3c:	00d383b3          	add	t2,t2,a3
+  40:	0003a503          	lw	a0,0(t2)
+  44:	00100893          	li	a7,1
+  48:	00000073          	ecall
+  4c:	fff30313          	addi	t1,t1,-1
+  50:	fe5ff06f          	j	34 <while_output>
+
+00000054 <done>:
+  54:	00a00893          	li	a7,10
+  58:	00000073          	ecall
