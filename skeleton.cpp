@@ -59,7 +59,7 @@ void instDecExec(unsigned int instWord, int pc)
 			break;
 		}
 	// }
-	/////////i did habd fa45 please help w fahmony el logic bta3y ahahahahah
+	
 
 	if (pc == (offset_j))
 	{ //offset_j = pc+J_imm
